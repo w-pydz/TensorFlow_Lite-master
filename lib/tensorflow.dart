@@ -111,11 +111,7 @@ class _TensorflowState extends State<Tensorflow> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             _loading
-                ? Container(
-                    color: Colors.blue,
-                    height: 300,
-                    width: 300,
-                  ) //display while loading
+                ? CircularProgressIndicator() //display while loading
                 : Container(
                     color: Colors
                         .red, //include image and result. if image has no bg, red will all around.
